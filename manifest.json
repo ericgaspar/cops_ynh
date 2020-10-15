@@ -6,8 +6,9 @@
         "en": "Calibre OPDS (and HTML) PHP Server",
         "fr": "Calibre OPDS (et HTML) PHP Serveur"
     },
-    "url": "https://github.com/YunoHost-Apps/cops_ynh",
-    "license": "free",
+    "version": "1.1.3~ynh1",
+    "url": "https://github.com/seblucas/cops",
+    "license": "GPL-2.0",
     "maintainer": {
         "name": "polytan02",
         "email": "polytan02@mcgva.org"
@@ -15,10 +16,10 @@
     "multi_instance": true,
     "services": [
         "nginx",
-        "php5-fpm"
+        "php7.0-fpm"
     ],
     "requirements": {
-         "yunohost": ">= 2.4.0"
+         "yunohost": ">= 3.8.1"
     },
     "arguments": {
         "install" : [
@@ -52,12 +53,12 @@
             },
             {
                 "name": "is_public",
+                "type": "boolean",
                 "ask": {
-                    "en": "Is it a public website ?",
-                    "fr": "Est-ce un site publique ?"
+                    "en": "Is it a public application?",
+                    "fr": "Est-ce une application publique ?"
                 },
-                "choices": ["Yes", "No"],
-                "default": "Yes"
+                "default": true
             },
  	    {
                 "name": "basicauthcreate",

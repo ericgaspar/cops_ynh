@@ -8,7 +8,7 @@
 
 * Creates an OPDS and HTML server based on a Calibre folder stored in Owncloud or NextCloud
 
-Packaged version : 1.0.1
+Packaged version : 1.1.3
 
  * Report a bug: https://github.com/YunoHost-Apps/cops_ynh/issues
  * App website: http://blog.slucas.fr/fr/oss/calibre-opds-php-server
